@@ -7,3 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 u = User.create(name: "Lala")
+
+f = File.open(File.join(Rails.root, "test.txt"))
+
+u.avatar = f
+
+u.save
